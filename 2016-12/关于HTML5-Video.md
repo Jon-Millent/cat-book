@@ -41,6 +41,8 @@
 <br />
 ![image](https://github.com/Jon-Millent/wen/blob/master/2016-12/img/2016-12/tio1.png?raw=true)
 <br />
+<br />
 **我想这个功能大概是HTML5是做不到的，后来我发现他们是用后台生成好的图片，类似于雪碧图的效果**<br />
+<br />
 <br />
 ![image](https://github.com/Jon-Millent/wen/blob/master/2016-12/img/2016-12/M1.jpg?raw=true)
