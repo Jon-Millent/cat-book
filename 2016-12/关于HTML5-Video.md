@@ -31,3 +31,9 @@
 		xhr.send();
 	}
 ```
+**我们也得到了一个类似的地址**<br />
+```html
+<img src="blob:http%3A//localhost%3A8088/bf10f761-426d-4f77-83a3-fbe80f2a9787">
+```
+**这个问题解决以后，我又发现在播放视频的时候，通过移动鼠标可以实现知道之后每段的大概图像类似于这样**<br />
+[!image](https://github.com/Jon-Millent/wen/blob/master/2016-12/img/2016-12/tio1.png?raw=true)
