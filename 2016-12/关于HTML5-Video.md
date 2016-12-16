@@ -8,3 +8,26 @@
 **他的video标签的src很奇怪，不是正常的url，个人认为这是防止视频真实地址被看到的缘故，至于这样的链接如何生成，下面来探讨一下。首先要用到这几个方法**<br />
 * window.URL.createObjectURL //根据传入的参数创建一个指向该参数对象的URL
 * window.URL.revokeObjectURL /释放指向该参数对象的URL
+
+**尝试**
+
+```javascript
+	window.onload=function(){
+		var xhr = new XMLHttpRequest();
+		window.URL = window.URL || window.webkitURL;
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4){
+				var img = document.createElement("img");
+			        img.onload = function(e) {
+			          window.URL.revokeObjectURL(img.src); // 清除释放
+			          document.body.appendChild(img);
+			        };
+			        img.src = window.URL.createObjectURL(xhr.response);
+				 
+			}
+		}
+		xhr.open('get','/static/123.png',true);
+		xhr.responseType = "blob";
+		xhr.send();
+	}
+```
