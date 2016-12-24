@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_face": "DejaVuSansMono",
+	"font_size": 21,
+	"font_options": ["gray_antialias"],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 2
+}
