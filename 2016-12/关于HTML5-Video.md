@@ -32,21 +32,18 @@
 		xhr.send();
 	}
 ```
-**我们也得到了一个类似的地址**<br />
+**我们也得到了一个类似的地址**
 ```html
 <img src="blob:http%3A//localhost%3A8088/bf10f761-426d-4f77-83a3-fbe80f2a9787">
 ```
-<br />
-**这个问题解决以后，我又发现在播放视频的时候，通过移动鼠标可以实现知道之后每段的大概图像类似于这样**<br />
-<br />
+
+**这个问题解决以后，我又发现在播放视频的时候，通过移动鼠标可以实现知道之后每段的大概图像类似于这样**
+
 ![image](https://github.com/Jon-Millent/wen/blob/master/2016-12/img/2016-12/tio1.png?raw=true)
-<br />
-<br />
-**我想这个功能大概是HTML5是做不到的，后来我发现他们是用后台生成好的图片，类似于雪碧图的效果**<br />
-<br />
-<br />
+
+**我想这个功能大概是HTML5是做不到的，后来我发现他们是用后台生成好的图片，类似于雪碧图的效果**
+
 ![image](https://github.com/Jon-Millent/wen/blob/master/2016-12/img/2016-12/M1.jpg?raw=true)
 
-<br />
-<br />
+
 **未完待续...**
