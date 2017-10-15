@@ -6,3 +6,25 @@
 `www.xxx.com/#/product/shop?id=100`
 #### 会被过滤成
 `www.xxx.com?from=timeline`
+
+#### 灵机一动想到一个注意,步骤如下
+
+* 处理分享链接
+  ```javascript
+  
+    var base = new Base64();
+    var encrypt_data = base.encode(location.href);
+    var shareHref = location.origin+location.pathname + 'jump.html?hash=' + encrypt_data;
+    
+    wx.onMenuShareTimeline({
+        title: $scope.product.name+' (来自xxx的分享)', // 分享标题
+        link: shareHref, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: $scope.product.photos[0].large, // 分享图标
+        success: function () {
+
+        },
+        cancel: function () {
+
+        }
+    });
+  ```
