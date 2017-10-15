@@ -10,6 +10,8 @@
 #### 灵机一动想到一个注意,步骤如下
 
 * 处理分享链接
+
+
   ```javascript
   
     var base = new Base64();
@@ -29,6 +31,8 @@
     });
   ```
 * 项目目录新建一个 `jump.html` 的中转文件,然后转接
+
+
   ```javascript
 
     var hash = getReauest().hash;
