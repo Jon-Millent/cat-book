@@ -18,7 +18,7 @@
   <input type="file" (change)="fileChange($event)">
 ```
 
-### unsafe:[bold|base64] 不安全的协议头解决方案
+### unsafe:[blob|base64] 不安全的协议头解决方案
 
 ```typescript
   import { DomSanitizer } from '@angular/platform-browser'
