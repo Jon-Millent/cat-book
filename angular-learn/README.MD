@@ -7,6 +7,10 @@
 * 启动 `ionic serve`
 * 安卓手机下运行测试 `ionic cordova run android --device`
 * 打包 `ionic cordova build android --prod --release`
+* note: 打包失败的话见下面解决
+  * 1. `ionic cordova build android --prod --release`
+  * 2. 在 `android studio` 打开项目的 `platforms/android`
+  * 3. 使用`android studio`自带的打包工具打包
 
 
 ## 语法迁移
