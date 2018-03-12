@@ -26,6 +26,7 @@
   }
   export class Test {
     fileChange(event){
+      let file = target.files[0]
       this.uploadBox.push({
         name: file.name,
         img: this.sanitizer.bypassSecurityTrustUrl(this.createObjectURL(file))
