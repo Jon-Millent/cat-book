@@ -1,5 +1,14 @@
 # angular 2采坑记
 
+## ionic 相关
+
+* 安装 `npm install -g cordova ionic`
+* 创建项目 `ionic start myApp tabs`
+* 启动 `ionic serve`
+* 安卓手机下运行测试 `ionic cordova run android --device`
+* 打包 `ionic cordova build android --prod --release`
+
+
 ## 语法迁移
 
 ### `ng-model` 绑定
