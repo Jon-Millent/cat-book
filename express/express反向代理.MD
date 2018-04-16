@@ -36,9 +36,6 @@ location /photo/2018/ {
   background-image: url("../icon/zhaiyao.png"); 这要根据项目不同加 ../ 
 ```
 
-### 坑
-例如遇到 `xxx.com/photo/2018/list` 还好说，如果要这样 `xxx.com/photo/2018/list/001` 就直接找不对路径了，  
-建议还是 `xxx.com/photo/2018/list?id=1001` 解决，推荐使用二级域名反向代理
 
 ## 使用二级域名反向代理
 ### `nginx` 配置
