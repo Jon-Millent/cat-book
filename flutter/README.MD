@@ -11,4 +11,4 @@
   * File-》setting-》Plugins
   * 搜索flutter，然后安装，然后restart.....
 * 打包
- * `flutter build apk`
+  * `flutter build apk`
