@@ -10,3 +10,5 @@
 * 在android studio安装插件
   * File-》setting-》Plugins
   * 搜索flutter，然后安装，然后restart.....
+* 打包
+ * `flutter build apk`
