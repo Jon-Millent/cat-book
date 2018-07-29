@@ -1,7 +1,7 @@
 # 安装 for windows
 
 ## 安装JDK
-<a href=""http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>jdk下载</a>JDK 的版本必须是 1.8（不支持 1.9）。
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">jdk下载</a>JDK 的版本必须是 1.8（不支持 1.9）。
 然后设置环境变量
 * `JAVA_HOME` 例如 `D:\Program Files\Java\jdk1.8.0_181`
 * `path` 添加 jdk 和 jre bin目录， 例如 `D:\Program Files\Java\jdk1.8.0_181\bin` `D:\Program Files\Java\jre\bin`
