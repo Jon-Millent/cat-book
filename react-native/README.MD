@@ -23,7 +23,7 @@
 * `ANDROID_HOME` 例如 `D:\Program Files\Android\sdk`
 * 在 `path` 添加 `%ANDROID_HOME%\platform-tools`和 `%ANDROID_HOME%\tools`
 
-测试是否安装成功 `android` `adb`
+测试是否安装成功 `android` `adb devices`
 
 ## 安装nodejs
 https://nodejs.org/en/ 很简单，8.0以上就行
