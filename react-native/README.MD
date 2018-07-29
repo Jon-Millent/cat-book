@@ -37,8 +37,13 @@ https://nodejs.org/en/ 很简单，8.0以上就行
 * 设置镜像 `npm config set registry https://registry.npm.taobao.org --global` `npm config set disturl https://npm.taobao.org/dist --global`
 * 安装 `npm install -g react-native-cli`
 
+
+## 启动模拟器
+
+使用 android studio 的模拟器，或者插入手机开启usb调试，允许安装
 ## 创建项目
 * `react-native init MyProject`
 * `react-native start`
 * `react-native run-android` or `react-native run-ios`
 
+摇晃设备或按Menu键（Bluestacks模拟器按键盘上的菜单键，通常在右Ctrl的左边 或者左Windows键旁边），可以打开调试菜单，点击Dev Settings，选Debug server host for device，输入你的正在运行packager的那台电脑的局域网IP加:8081（同时要保证手机和电脑在同一网段，且没有防火墙阻拦），再按back键返回，再按Menu键，在调试菜单中选择Reload JS，就应该可以看到运行的结果了。
