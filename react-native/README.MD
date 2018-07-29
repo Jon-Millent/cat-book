@@ -6,6 +6,7 @@
 * `JAVA_HOME` 例如 `D:\Program Files\Java\jdk1.8.0_181`
 * `path` 添加 jdk 和 jre bin目录， 例如 `D:\Program Files\Java\jdk1.8.0_181\bin` `D:\Program Files\Java\jre\bin`
 
+测试是否安装成功 `java` `javac`
 ## 安装android sdk 需要翻墙
 <a href="https://developer.android.com/studio/index.html">首先下载和安装 Android Studio</a>
 然后进入SDKManager(可通过Android Studio菜单Tools-Android-SDK Manager)，确保以下项目已经安装并更新到最新：
@@ -17,7 +18,6 @@
 * Extras/Android Support Library
 * Extras/Android Support Repository
 
-测试是否安装成功 `java` `javac`
 
 下载完安卓sdk后添加环境变量
 * `ANDROID_HOME` 例如 `D:\Program Files\Android\sdk`
@@ -27,12 +27,12 @@
 
 ## 安装nodejs
 https://nodejs.org/en/ 很简单，8.0以上就行
-
+测试是否安装成功 `node -v`
 ## 安装python
 必须下载2.x版本 https://www.python.org/download/releases/2.7.2/
 添加环境变量
 * 在 `path` 添加例如 `D:\Python27`
-
+测试是否安装成功 `python`
 ## 安装 react-native
 * 设置镜像 `npm config set registry https://registry.npm.taobao.org --global` `npm config set disturl https://npm.taobao.org/dist --global`
 * 安装 `npm install -g react-native-cli`
