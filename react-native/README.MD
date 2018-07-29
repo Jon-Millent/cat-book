@@ -42,7 +42,7 @@ https://nodejs.org/en/ 很简单，8.0以上就行
 
 使用 android studio 的模拟器，或者插入手机开启usb调试，允许安装
 ## 创建项目
-* `react-native init MyProject`
+* `react-native init MyApp --version 0.55.4` 推荐使用0.55.4版本
 * `react-native start`
 * `react-native run-android` or `react-native run-ios`
 
