@@ -1,0 +1,5 @@
+# Install
+* `curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -`
+* `yum install -y nodejs`
+
+
