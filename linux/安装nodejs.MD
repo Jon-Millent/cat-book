@@ -5,7 +5,7 @@
 
 ## Debian
 ### Adding the NodeSource APT repository for Debian-based distributions repository AND the PGP key for verifying packages
-`sudo curl -sL https://deb.nodesource.com/setup_6.x | bash -`
+`sudo curl -sL https://deb.nodesource.com/setup_8.x | bash -`
 
 ### Install Node.js from the Debian-based distributions repository
 `sudo apt-get install -y nodejs`
