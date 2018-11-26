@@ -1,6 +1,9 @@
 # sequelize-learn
 sequelize 学习踩坑代码记录
 
+## 文档
+https://demopark.github.io/sequelize-docs-Zh-CN/querying.html
+
 ## 1、 mysql可视化工具 `heidiSQL`
 `heidiSQL` 可以方便可视化建表，下载地址 https://www.heidisql.com/download.php
 ## 2、 自动化 `model` 生成工具 `sequelize-auto`
