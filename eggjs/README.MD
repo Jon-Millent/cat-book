@@ -86,3 +86,18 @@ module.exports = HomeController;
 ```
 
 
+```csrf
+  config.security = {
+    /**
+     * 禁用methodnoallow，对OPTIONS放行
+     */
+    methodnoallow: {
+      enable: false
+    },
+    csrf: {
+      enable: false,
+      headerName: 'x-csrf-token',
+      ignoreJSON: false,
+    }
+  };
+```
