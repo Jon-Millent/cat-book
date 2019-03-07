@@ -23,3 +23,22 @@ let apple = {
 apple.showName.myApply(window, 10, 111)
 
 ```
+
+### `apply`
+```js
+Function.prototype.myCall = function (parent, arrays) {
+	let obj = parent
+	parent.doint = this
+	parent.doint(arrays)
+	delete parent.doint
+}
+
+// test
+let apple = {
+	showName(a, b){
+		console.log(this, a, b)
+	}
+}
+
+apple.showName.myCall(window, [1, 2, 3, 4])
+```
