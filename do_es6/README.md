@@ -15,7 +15,7 @@ Function.prototype.myApply = function (parent) {
 }
 // test
 let apple = {
-	showName(a, b){
+	showName(a){
 		console.log(this, a, b)
 	}
 }
@@ -35,8 +35,8 @@ Function.prototype.myCall = function (parent, arrays) {
 
 // test
 let apple = {
-	showName(a, b){
-		console.log(this, a, b)
+	showName(a){
+		console.log(this, a)
 	}
 }
 
