@@ -14,7 +14,6 @@ Function.prototype.myApply = function (parent) {
 	delete parent.doint
 }
 // test
-
 let apple = {
 	showName(a, b){
 		console.log(this, a, b)
