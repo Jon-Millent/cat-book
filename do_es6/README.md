@@ -24,7 +24,7 @@ apple.showName.myApply(window, 10, 111)
 
 ```
 
-### `apply`
+### `call`
 ```js
 Function.prototype.myCall = function (parent, arrays) {
 	let obj = parent
