@@ -3,3 +3,4 @@
 * `apple`
 * `call`
 * `eqal`
+* `deepCopy`
