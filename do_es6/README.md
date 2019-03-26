@@ -4,3 +4,4 @@
 * `call`
 * `eqal`
 * `deepCopy`
+* `instanceof`
