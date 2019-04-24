@@ -5,3 +5,4 @@
 * `eqal`
 * `deepCopy`
 * `instanceof`
+* `bind`
