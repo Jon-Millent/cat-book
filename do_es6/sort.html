@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+function bubbleSort(arr) {
+    var len = arr.length;
+    for (var i = 0; i < len; i++) {
+        for (var j = 0; j < len - 1 - i; j++) {
+            if (arr[j] > arr[j+1]) {        //相邻元素两两对比
+                var temp = arr[j+1];        //元素交换
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}	
+
+function insertionSort(arr) {
+    var len = arr.length;
+    var preIndex, current;
+    for (var i = 1; i < len; i++) {
+        preIndex = i - 1;
+        current = arr[i];
+        while(preIndex >= 0 && arr[preIndex] > current) {
+            arr[preIndex+1] = arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex+1] = current;
+    }
+    return arr;
+}
+</script>
+
+<script type="text/javascript">
+
+	function random(min, max) {
+		return Math.floor( Math.random() * max ) + min
+	}
+	function genterArray(length) {
+		let ne = [];
+
+		for(let i=0; i<length; i++) {
+			ne.push( random(1, 1000000) )
+		}
+
+		return ne;
+	}
+	
+	let myArray = genterArray(10000);
+
+	function superSort(inputArray) {
+		
+		let sortArray = {};
+		let outputArray = [];
+
+		inputArray.forEach(val=>{
+			let len = val.toString().length;
+			sortArray[len] = sortArray[len] || [];
+			sortArray[len].push(val);
+		})
+
+		for(let i in sortArray) {
+			sortArray[i].sort((a,b)=>{
+				return a - b;
+			})
+
+			outputArray.push(...sortArray[i])
+		}
+
+
+		return outputArray;
+	}
+
+	console.time();
+	let o = superSort(myArray);
+	console.timeEnd()
+	console.log(o)
+
+
+	/*
+	console.time();
+	let o = myArray.sort((a,b)=>{return a - b});
+	console.timeEnd()
+	console.log(o)
+	*/
+
+	/*
+	console.time();
+	let o = bubbleSort(myArray);
+	console.timeEnd()
+	console.log(o)
+	*/
+
+	/*
+	console.time();
+	let o = insertionSort(myArray);
+	console.timeEnd()
+	console.log(o)
+	*/
+
+	
+</script>
+</body>
+</html>
