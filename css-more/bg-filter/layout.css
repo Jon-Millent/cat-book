@@ -1,0 +1,95 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+html, body, p, i {
+	padding: 0;
+	margin: 0;
+}
+.full-box {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.need-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 52px;
+	background: rgba(255, 255, 255, .4);
+	display: flex;
+	z-index: 600;
+	/* Safari for macOS & iOS */
+    -webkit-backdrop-filter: blur(12px); 
+
+    /* Google Chrome */
+    backdrop-filter: blur(12px);
+
+}
+.footer .item {
+	flex: 1;
+	text-align: center;
+}
+.footer .item .icon-wrap {
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2px
+}
+.footer .item .icon-wrap .icon {
+	font-size: 30px;
+	color: #c1bfbf;
+}
+.footer .item .name {
+	font-size: 12px;
+	color: #c1bfbf;
+}
+.footer .item.active .icon-wrap .icon {
+	color: #077bee;
+}
+.footer .item.active .name {
+	color: #077bee;
+}
+
+
+.main-content {
+	z-index: 100;
+	background: #f9f9f9;
+}
+.main-content .topic {
+	padding: 16px;
+}
+.main-content .topic .time {
+	color: #ccc;
+	font-size: 14px;
+}
+.main-content .topic .big {
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 6px;
+}
+
+.main-content .card-controller {
+	padding: 0 16px;
+}
+.main-content .card-controller .card-item {
+	height: 420px;
+	background-color: #ccc;
+	border-radius: 18px;
+	margin-bottom: 22px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
